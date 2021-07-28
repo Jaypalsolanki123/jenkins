@@ -1,7 +1,7 @@
 pipeline{
   agent any
   environment{
-    PATH = "/usr/bin/mvn"
+    PATH = "/usr/bin"
   }
   stages{
     stage("GitCheckOut"){
