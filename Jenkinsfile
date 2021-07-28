@@ -12,7 +12,7 @@ pipeline{
     stage("MavenBuild"){
       steps{
         sh "mvn clean package"
-        sh  "cp /home/jaypalsinh/download /var/lib/tomcat9/webapps/
+        sh  "sudo cp -r /home/jaypalsinh/Downloads/ /var/lib/tomcat9/webapps/"
       }
     }
     stage("WarFileDeploy"){
